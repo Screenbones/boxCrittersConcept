@@ -1,5 +1,2 @@
 TODO:
-Set a margin on top of menu
-Center align the text menu items
 Adjust the colors of the menu items
-Add animation for underline when hovered over text

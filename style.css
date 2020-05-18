@@ -15,6 +15,7 @@ body {
 nav {
 	width: 100%;
 	text-align: center;
+	margin-top: 5px;
 }
 
 nav ul li {
@@ -24,10 +25,29 @@ nav ul li {
 
 nav ul li a {
 	text-decoration: none;
-	color: #0000FF;
+	color: #00F;
 	font-size: 20pt;
+	position: relative;
 }
 
-nav ul li a:hover {
-	border-bottom: 2px solid #0000CC;
+nav ul li:not(:nth-child(3)) a {
+	top: -18px;
+}
+
+nav ul li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #00F;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
 }
