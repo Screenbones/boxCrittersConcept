@@ -1,2 +1,3 @@
 TODO:
 Adjust the colors of the menu items
+Set a font for the menu items
