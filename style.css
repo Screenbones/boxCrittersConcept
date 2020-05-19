@@ -68,6 +68,47 @@ main {
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* Note: Should probably get someone to put together a concept map image... for the time being, this'll have to do */
+	text-align: center;
+}
+
+#heroImage * {
+	position: relative;
+}
+
+#heroImage h1 {
+	font-size: 50px;
+	font-family: Arial, sans-serif;
+	color: #00F;
+	font-weight: bold;
+	background-color: #964B00;
+	top: 30%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#heroImage p {
+	background-color: #964B00;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	top: 33%;
+	font-size: 30px;
+}
+
+#heroImage #playButton {
+	top: 40%;
+}
+
+#heroImage #playButton a {
+	background-color: #964B00;
+	padding: 15px;
+	border-radius: 1600px;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	color: #F0EAD6;
+}
+
+#heroImage #playButton a:hover {
+	background-color: #9F8170;
 }
 
 footer {
