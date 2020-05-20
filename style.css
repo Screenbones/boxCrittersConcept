@@ -16,18 +16,20 @@ nav {
 	width: 100%;
 	text-align: center;
 	margin-top: 5px;
+	font-family: Arial, sans-serif;
 }
 
 nav ul li {
 	display: inline;
-	margin: 3%;
+	margin: 2%;
 }
 
 nav ul li a {
 	text-decoration: none;
-	color: #00F;
+	color: #08F;
 	font-size: 20pt;
 	position: relative;
+	font-weight: bold;
 }
 
 nav ul li:not(:nth-child(3)) a {
@@ -38,10 +40,10 @@ nav ul li a:before {
 	content: "";
 	position: absolute;
 	width: 100%;
-	height: 2px;
+	height: 3px;
 	bottom: 0;
 	left: 0;
-	background-color: #00F;
+	background-color: #08F;
 	visibility: hidden;
 	transform: scaleX(0);
 	transition: all 0.3s ease-in-out 0s;
@@ -59,16 +61,60 @@ main {
 	margin-top: 5px;
 }
 
+main .floatLeft {
+	float: left;
+	width: 45%;
+}
+
+main .floatRight {
+	float: right;
+	width: 45%;
+}
+
+main .clearFloat {
+	clear: both;
+}
+
+main .boxContent {
+	background-color: #964B00;
+	border: 8px outset #9F8170;
+	border-radius: 15px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+main .boxContent h1 {
+	font-family: Arial, sans-serif;
+	color: #2DBDF6;
+	margin: 5px;
+}
+
+main .boxContent p, main .boxContent a {
+	margin: 5px;
+	text-indent: 12px;
+	line-height: 1.3;
+	color: #F0EAD6;
+}
+
+main .boxContent a {
+	text-decoration: none;
+}
+
+main .boxContent a:hover {
+	text-decoration: underline;
+}
+
 #heroImage {
 	width: 100%;
 	height: 80vh;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url(img/map.png);
+	background-image: url(img/hero.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* Note: Should probably get someone to put together a concept map image... for the time being, this'll have to do */
 	text-align: center;
+	margin-bottom: 15px;
+	border-radius: 5px;
 }
 
 #heroImage * {
@@ -78,7 +124,7 @@ main {
 #heroImage h1 {
 	font-size: 50px;
 	font-family: Arial, sans-serif;
-	color: #00F;
+	color: #2DBDF6;
 	font-weight: bold;
 	background-color: #964B00;
 	top: 30%;
@@ -92,6 +138,7 @@ main {
 	padding-bottom: 15px;
 	top: 33%;
 	font-size: 30px;
+	color: #F0EAD6;
 }
 
 #heroImage #playButton {
@@ -105,10 +152,15 @@ main {
 	text-decoration: none;
 	font-family: Arial, sans-serif;
 	color: #F0EAD6;
+	border: 5px outset #9F8170;
 }
 
 #heroImage #playButton a:hover {
-	background-color: #9F8170;
+	background-color: #7B3F00;
+}
+
+#heroImage #playButton a:active {
+	border-style: inset;
 }
 
 footer {
@@ -116,6 +168,7 @@ footer {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 0;
 	text-align: center;
 	margin-top: 5px;
 }
