@@ -75,6 +75,28 @@ main .clearFloat {
 	clear: both;
 }
 
+main .wideScreen {
+	display: block;
+	width: 100%;
+}
+
+main .subMenu {
+	text-align: center;
+}
+
+main .subMenu ul li {
+	display: inline;
+}
+
+main .subMenu ul li:not(:first-of-type):before {
+	content: " | ";
+	color: #0F0;
+}
+
+#activeSub a {
+	color: #0F0;
+}
+
 main .boxContent {
 	background-color: #964B00;
 	border: 8px outset #9F8170;
