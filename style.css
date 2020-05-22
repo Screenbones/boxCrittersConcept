@@ -216,6 +216,7 @@ main .boxContent a:hover {
 	width: 50%;
 	height: 30%;
 	text-align: center;
+	user-select: none;
 }
 
 #innerBox button {
