@@ -5,6 +5,7 @@ body {
 	background-size: 100% 100%;
 	background-attachment: fixed;
 	max-width: 100vw;
+	overflow: auto;
 }
 
 #wrapper {
@@ -175,6 +176,8 @@ main .boxContent a:hover {
 	font-family: Arial, sans-serif;
 	color: #F0EAD6;
 	border: 5px outset #9F8170;
+	cursor: pointer;
+	user-select: none;
 }
 
 #heroImage #playButton a:hover {
@@ -183,6 +186,71 @@ main .boxContent a:hover {
 
 #heroImage #playButton a:active {
 	border-style: inset;
+}
+
+#popupBox {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	z-index: 998;
+	background-color: #CCC;
+	opacity: .5;
+	top: 0px;
+	right: 0px;
+}
+
+#innerBox {
+	opacity: 1;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: none;
+	background-color: #964B00;
+	border: 12px outset #9F8170;
+	border-radius: 64px;
+	width: 50%;
+	height: 30%;
+	text-align: center;
+}
+
+#innerBox button {
+	float: right;
+	position: relative;
+	right: 32px;
+	top: 15px;
+}
+
+#innerBox h1 {
+	font-size: 32px;
+	padding-top: 12px;
+	padding-bottom: 8px;
+	background-color: #2DBDF6;
+	color: #964B00;
+	border-radius: 64px 64px 0px 0px;
+}
+
+#innerBox p {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	font-size: 20px;
+}
+
+#innerBox a {
+	text-decoration: none;
+	color: #FF0;
+	font-size: 30px;
+}
+
+#innerBox a:hover {
+	text-decoration: underline;
 }
 
 footer {
