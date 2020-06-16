@@ -178,11 +178,11 @@ main .boxContent a:hover {
 	color: #F0EAD6;
 }
 
-#heroImage #playButton {
+#Button {
 	top: 40%;
 }
 
-#heroImage #playButton a {
+#Button a {
 	background-color: #964B00;
 	padding: 15px;
 	border-radius: 1600px;
@@ -194,11 +194,11 @@ main .boxContent a:hover {
 	user-select: none;
 }
 
-#heroImage #playButton a:hover {
+#Button a:hover {
 	background-color: #7B3F00;
 }
 
-#heroImage #playButton a:active {
+#Button a:active {
 	border-style: inset;
 }
 
@@ -209,7 +209,7 @@ main .boxContent a:hover {
 	display: none;
 	z-index: 998;
 	background-color: #CCC;
-	opacity: .5;
+	opacity: .4;
 	top: 0px;
 	right: 0px;
 }
